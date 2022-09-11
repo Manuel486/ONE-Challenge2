@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="data:,">
+</head>
+<body>
+    <header>
+        <img src="./imagenes/Vector.svg" alt="">
+    </header>
+    <main>
+        <section id="principal" class="principal">
+            <button id="jugar" class="btn btn-azul">Iniciar Juego</button>
+            <button id="agregar" class="btn btn-transparente">Agregar nueva palabra</button>
+        </section>
+        <section id="agregar_palabra" class="agregar_palabra">
+            <textarea id="texto" class="texto" type="text" placeholder="Ingrese una palabra"></textarea>
+            <div class="restriccion">
+                <img src="./imagenes/Advertencia.svg" alt="">
+                <p>Máx. de 8 letras</p>
+            </div>
+            <div class="botones tres_botones">
+                <button id="guardar" class="btn btn-azul">Guardar y empezar</button>
+                <button id="cancelar" class="btn btn-transparente">Cancelar</button>
+                <button id="consultar" class="btn btn-transparente">Palabras del juego</button>
+            </div>
+        </section>
+        <section id="ahorcado" class="ahorcado">
+            <canvas id="canvas"  width="230px" height="300px" ></canvas>
+            <div id="contenido" class="contenido"></div>
+            <div id="erroneo" class="erroneo"></div>
+            <div class="botones">
+                <button id="nuevoJuego" class="btn btn-azul">Nuevo Juego</button>
+                <button id="desistir" class="btn btn-transparente">Desistir</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a href="https://github.com/Manuel486?tab=repositories" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt=""></a>
+        <a href="https://www.linkedin.com/in/manuel-chunga-vargas-a8aa13234/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt=""></a>
+    </footer>
+    <script src="./script.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
